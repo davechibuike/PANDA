@@ -61,3 +61,8 @@ Endpoint HTTP Method Description
 - /appointment/:patientID PUT Update an existing appointment record.
 - /appointment/:patientID DELETE Delete an appointment record.
 - /missed-appointments GET Retrieve a list of all missed appointments.
+
+# Additional Details:
+- NHS number: The API uses NHS numbers for individual identification. Ensure valid NHS number formats when creating or retrieving individual records.
+- Authentication and Authorization: These are typically implemented for production environments.
+- Error Handling: The API returns standard HTTP status codes and JSON error responses for various error conditions.
