@@ -57,7 +57,7 @@ Endpoint HTTP Method Description
 - /individual/:nhs_number DELETE Delete an individual record.
 - /appointment POST Create a new appointment record.
 - /appointment GET Retrieve a list of all appointment records.
-- /appointment/:id GET Get an appointment by its ID.
-- /appointment/:id PUT Update an existing appointment record.
-- /appointment/:id DELETE Delete an appointment record.
+- /appointment/:patientID GET Get an appointment by its ID.
+- /appointment/:patientID PUT Update an existing appointment record.
+- /appointment/:patientID DELETE Delete an appointment record.
 - /missed-appointments GET Retrieve a list of all missed appointments.
