@@ -50,14 +50,14 @@ Below are steps required to reproduce and run the application in development.
 
 Endpoint HTTP Method Description
 
-|/individual  | POST  |Create a new individual record.
-/individual   GET Retrieve a list of all individual records.
-/individual/:nhs_number GET Get an individual by their NHS number.
-/individual/:nhs_number PUT Update an existing individual record.
-/individual/:nhs_number DELETE Delete an individual record.
-/appointment POST Create a new appointment record.
-/appointment GET Retrieve a list of all appointment records.
-/appointment/:id GET Get an appointment by its ID.
-/appointment/:id PUT Update an existing appointment record.
-/appointment/:id DELETE Delete an appointment record.
-/missed-appointments GET Retrieve a list of all missed appointments.
+- /individual   POST  Create a new individual record.
+- /individual   GET Retrieve a list of all individual records.
+- /individual/:nhs_number GET Get an individual by their NHS number.
+- /individual/:nhs_number PUT Update an existing individual record.
+- /individual/:nhs_number DELETE Delete an individual record.
+- /appointment POST Create a new appointment record.
+- /appointment GET Retrieve a list of all appointment records.
+- /appointment/:id GET Get an appointment by its ID.
+- /appointment/:id PUT Update an existing appointment record.
+- /appointment/:id DELETE Delete an appointment record.
+- /missed-appointments GET Retrieve a list of all missed appointments.
