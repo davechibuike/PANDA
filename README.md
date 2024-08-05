@@ -12,7 +12,7 @@ Below are steps required to reproduce and run the application in development.
 
 # Set up environment variables:
 
-- Create a .env file at the root of your project and add the necessary environment - - - variables for database connection and other configurations.
+- Create a .env file at the root of your project and add the necessary environment variables for database connection and other configurations.
 - config.env for DB keys
 - server for mongoDB connection
 
@@ -50,8 +50,8 @@ Below are steps required to reproduce and run the application in development.
 
 Endpoint HTTP Method Description
 
-/individual POST Create a new individual record.
-/individual GET Retrieve a list of all individual records.
+|/individual  | POST  |Create a new individual record.
+/individual   GET Retrieve a list of all individual records.
 /individual/:nhs_number GET Get an individual by their NHS number.
 /individual/:nhs_number PUT Update an existing individual record.
 /individual/:nhs_number DELETE Delete an individual record.
