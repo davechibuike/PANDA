@@ -48,7 +48,7 @@ Below are steps required to reproduce and run the application in development.
     "postcode": "string",
     }
 
-Endpoint HTTP Method Description
+# Endpoint HTTP Method Description
 
 - /individual   POST  Create a new individual record.
 - /individual   GET Retrieve a list of all individual records.
