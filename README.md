@@ -8,7 +8,9 @@ Below are steps required to reproduce and run the application in development.
 # Prerequisites
 
 - Node.js (version 14 or later recommended) and npm package manager installed.
-- database (MongoDB) set up and running.
+- database MongoDB set up by installing mongDB , what was used for this project is mongoDB Atlas
+- Connect to DB :-
+  $ check server.js last comments
 
 # Set up environment variables:
 
@@ -25,7 +27,7 @@ Below are steps required to reproduce and run the application in development.
 
 - #### Interacting with the API
 
-      - API Endpoints
+  - API Endpoints
       - The API provides the following endpoints:
         $ http://localhost:3000/api/v1/individual
         $ http://localhost:3000/api/v1/appointment
