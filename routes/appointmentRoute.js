@@ -8,6 +8,8 @@ router
   .patch(appointmentController.updateAppointmentByPatient)
   .delete(appointmentController.deleteAppointmentByPatient);
 
+router.put("/:id/update-status", appointmentController.updateAppointmentStatus);
+
 router
   .route("/")
   .get(appointmentController.getAllAppointments)

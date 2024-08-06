@@ -141,3 +141,30 @@ exports.deleteAppointmentByPatient = async (req, res) => {
     });
   }
 };
+
+exports.updateAppointmentStatus = async (req, res) => {
+  try {
+    const { status } = req.body;
+    const { id } = req.params;
+
+    // Find the appointment by ID
+    const appointment = await Appointment.findById(id);
+    if (!appointment) {
+      return res.status(404).json({ error: "Appointment not found" });
+    }
+
+    // Check if the current status is "cancelled"
+    if (appointment.status === "cancelled") {
+      return res.status(400).json({ error: "Status cannot be reinstated" });
+    }
+
+    // Update the status
+    appointment.status = status;
+    await appointment.save();
+
+    res.status(200).json(appointment);
+  } catch (error) {
+    console.error("Error updating appointment status:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
