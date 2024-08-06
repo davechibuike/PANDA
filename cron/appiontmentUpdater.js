@@ -21,7 +21,6 @@ const updateMissedAppointments = async () => {
         { appointmentTime: { $lt: now }, status: { $ne: "attended" } },
         { $set: { status: "missed" } }
       );
-      console.log(`Updated ${result.nModified} appointments to missed.`);
     } else {
       console.log("No appointments are in the past.");
     }

@@ -25,20 +25,27 @@ Below are steps required to reproduce and run the application in development.
   - npm install
   - npm run start
 
+- To run test
+
+  - npm run test
+    -To run cron job , this ensures that appointments should be considered 'missed' if they are not set to 'attended' by the end of the appointment.
+  - npm run cron
+
 - #### Interacting with the API
 
   - API Endpoints
-      - The API provides the following endpoints:
-        $ http://localhost:3000/api/v1/individual
-        $ http://localhost:3000/api/v1/appointment
-        $ http://localhost:3000/api/v1/missed-appointments
 
-      - With Query Params
-        $ http://localhost:3000/api/v1/individual/:nhs_number
-        $ http://localhost:3000/api/v1/appointment/:patient
+    - The API provides the following endpoints:
+      $ http://localhost:3000/api/v1/individual
+      $ http://localhost:3000/api/v1/appointment
+      $ http://localhost:3000/api/v1/missed-appointments
 
-      - Individual Endpoints
-      - Create an Individual:
+    - With Query Params
+      $ http://localhost:3000/api/v1/individual/:nhs_number
+      $ http://localhost:3000/api/v1/appointment/:patient
+
+    - Individual Endpoints
+    - Create an Individual:
 
   - Post Request http://localhost:3000/api/v1/individual
   - Request body:
@@ -52,8 +59,8 @@ Below are steps required to reproduce and run the application in development.
 
 # Endpoint HTTP Method Description
 
-- /individual   POST  Create a new individual record.
-- /individual   GET Retrieve a list of all individual records.
+- /individual POST Create a new individual record.
+- /individual GET Retrieve a list of all individual records.
 - /individual/:nhs_number GET Get an individual by their NHS number.
 - /individual/:nhs_number PUT Update an existing individual record.
 - /individual/:nhs_number DELETE Delete an individual record.
@@ -65,6 +72,7 @@ Below are steps required to reproduce and run the application in development.
 - /missed-appointments GET Retrieve a list of all missed appointments.
 
 # Additional Details:
+
 - NHS number: The API uses NHS numbers for individual identification. Ensure valid NHS number formats when creating or retrieving individual records.
 - Authentication and Authorization: These are typically implemented for production environments.
 - Error Handling: The API returns standard HTTP status codes and JSON error responses for various error conditions.

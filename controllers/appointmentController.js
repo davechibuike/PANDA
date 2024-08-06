@@ -32,7 +32,6 @@ exports.createAppointments = async (req, res) => {
           "Duplicate appointment: An appointment already exists for this patient at the specified time.",
       });
     } else {
-      console.error(err);
       res.status(500).json({
         status: "fail",
         message: "Server Error",
@@ -50,7 +49,6 @@ exports.getAllAppointments = async (req, res) => {
       data: appointments,
     });
   } catch (err) {
-    console.error(err);
     res.status(500).json({
       status: "fail",
       message: "Server Error",
@@ -77,7 +75,6 @@ exports.getAppointmentsByPatient = async (req, res) => {
       data: appointments,
     });
   } catch (err) {
-    console.error(err);
     res.status(500).json({
       status: "fail",
       message: "Server Error",
@@ -108,7 +105,6 @@ exports.updateAppointmentByPatient = async (req, res) => {
       data: appointment,
     });
   } catch (err) {
-    console.error(err);
     res.status(500).json({
       status: "fail",
       message: "Server Error",
@@ -134,7 +130,6 @@ exports.deleteAppointmentByPatient = async (req, res) => {
       data: appointment,
     });
   } catch (err) {
-    console.error(err);
     res.status(500).json({
       status: "fail",
       message: "Server Error",

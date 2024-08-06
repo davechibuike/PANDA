@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
-    "cron": "node cron/appiontmentUpdater.js"
+    "cron": "node cron/appiontmentUpdater.js",
+    "test": "npx jest"
   },
   "author": "dave nwaeze",
   "license": "ISC",
